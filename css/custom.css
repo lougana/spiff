@@ -6,7 +6,10 @@
 }
 
 #banner {
-  color: #ffff22;
+  color: #EEFF00;
+}
+#banner h1 {
+  padding-left: 22px;
 }
 #banner .submit {
   background-color: #78CD3E;
@@ -14,6 +17,14 @@
 }
 #banner .submit:hover {
   background-color: #88E648;
+}
+#banner .banner-left {
+  padding: 110px 0;
+  margin-top: 110px;
+}
+
+#logos .logo h1 {
+  padding-top: 60px;
 }
 
 #content .contentBox {
@@ -25,9 +36,15 @@
   background-position: 100%;
 }
 #footer-banner .footer-banner-inner h1, #footer-banner .footer-banner-inner h2 {
-  color: #FFE803;
+  color: #EEFF00;
   text-shadow: 2px 2px 4px #181818;
 }
 #footer-banner .footer-banner-inner a {
   text-shadow: inherit;
+}
+
+@media (max-width: 767px) {
+  #banner .banner-left {
+    margin-top: 0px;
+  }
 }

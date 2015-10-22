@@ -34,18 +34,20 @@ if(isset($_POST['action']) && $_POST['action']=='submitform')
 		$phone = strict_secure($N['phone']);
 	}	
 	else{ $phone = '';}
-	if(isset($N['message'])){
-		$message = strict_secure($N['message']);
+	if(isset($N['zip'])){
+		$zip = strict_secure($N['zip']);
 	}
-	else{ $message = '';}
+	else{ $zip = '';}
 	$path =  $_SERVER['HTTP_REFERER'];
 	$admin_message ='
 	Hello,
 	<br /><br /><br /><br />
-	Contact Us Form Received From '.$name.'
+	Contact Us Form Received For SpiffBook
 	<br /><br />
+	Name: '.$name.'<br/><br/>
 	Email: '.$email.'<br /><br />
 	Company: '.$company.'<br /><br />
+	Zip: '.$zip.'<br /><br />
 	Message:<br /><br />
 	'.$message.'<br /><br />
 	Sender Url:'.$path.'<br /><br /><br /><br />
@@ -62,6 +64,7 @@ if(isset($_POST['action']) && $_POST['action']=='submitform')
 	<br /><br />
 	Email: '.$email.'<br /><br />
 	Company: '.$company.'<br /><br />
+	Zip: '.$zip.'<br /><br />
 	Message:<br /><br />
 	'.$message.'<br /><br />
 	
