@@ -1,0 +1,36 @@
+#header {
+	span{
+		color: #CF4140;
+	}
+	.header-right p {
+		color: #898989;
+	}
+}
+#banner {
+	color: #ffff22;
+	.submit {
+		background-color: #78CD3E;
+		color: white;
+		&:hover {
+			background-color:#88E648;
+		}
+	}
+}
+#content {
+	.contentBox{
+		margin-top: 20px;
+	}
+}
+#footer-banner {
+	background-image: url('../images/footer-bg.jpg');
+	background-position: 100%;
+	.footer-banner-inner {
+		h1, h2 {
+	    color: #FFE803;
+	    text-shadow: 2px 2px 4px #181818;
+		}
+		a {
+			text-shadow: inherit;
+		}
+	}
+}

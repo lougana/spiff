@@ -1,0 +1,33 @@
+#header span {
+  color: #CF4140;
+}
+#header .header-right p {
+  color: #898989;
+}
+
+#banner {
+  color: #ffff22;
+}
+#banner .submit {
+  background-color: #78CD3E;
+  color: white;
+}
+#banner .submit:hover {
+  background-color: #88E648;
+}
+
+#content .contentBox {
+  margin-top: 20px;
+}
+
+#footer-banner {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: 100%;
+}
+#footer-banner .footer-banner-inner h1, #footer-banner .footer-banner-inner h2 {
+  color: #FFE803;
+  text-shadow: 2px 2px 4px #181818;
+}
+#footer-banner .footer-banner-inner a {
+  text-shadow: inherit;
+}
