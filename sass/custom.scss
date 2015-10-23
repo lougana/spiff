@@ -1,9 +1,11 @@
 #header {
 	span{
 		color: #CF4140;
+		font-size: 28px;
 	}
 	.header-right p {
 		color: #898989;
+		font-size: 28px;
 	}
 }
 #banner {
@@ -19,8 +21,12 @@
 		}
 	}
 	.banner-left {
-		padding: 110px 0;
-		margin-top: 110px;
+	    padding-top: 300px;
+	    .col-sm-6:first-of-type {
+	    	.fa-ul {
+	    		padding-left: 87px;
+	    	}
+	    }
 	}
 }
 #logos {
@@ -28,6 +34,18 @@
 		h1 {
 			padding-top: 60px;
 		}
+		h1:first-of-type {
+			padding-bottom: 70px;
+		}
+	}
+}
+#services {
+	background-color: #68ABD2;
+	h3, h1 {
+		color: white;
+	}
+	.serviceBox {
+		padding: 10px 0;
 	}
 }
 #content {

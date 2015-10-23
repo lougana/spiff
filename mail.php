@@ -1,5 +1,5 @@
 <?php
-define('admin_email','luis@brandster.com'); // Change admin email here for example admin@yoursite.com
+define('admin_email','sales@brandster.com'); // Change admin email here for example admin@yoursite.com
 define('website_name','spiffbook.com'); // Change website name here for example yoursite.com
 define('website_url', 'http://'.$_SERVER['HTTP_HOST']);
 
@@ -47,9 +47,8 @@ if(isset($_POST['action']) && $_POST['action']=='submitform')
 	Name: '.$name.'<br/><br/>
 	Email: '.$email.'<br /><br />
 	Company: '.$company.'<br /><br />
+	Phone: '.$phone.'<br /><br />
 	Zip: '.$zip.'<br /><br />
-	Message:<br /><br />
-	'.$message.'<br /><br />
 	Sender Url:'.$path.'<br /><br /><br /><br />
 	
 	
@@ -60,13 +59,12 @@ if(isset($_POST['action']) && $_POST['action']=='submitform')
 	$user_message ='
 	Hello '.$name.',
 	<br /><br /><br /><br />
-	Thank you for contacting us. Your following message has been received by Administrator:
+	Thank you for contacting us. Your following message has been received by SpiffBook:
 	<br /><br />
 	Email: '.$email.'<br /><br />
 	Company: '.$company.'<br /><br />
+	Phone: '.$phone.'<br /><br />
 	Zip: '.$zip.'<br /><br />
-	Message:<br /><br />
-	'.$message.'<br /><br />
 	
 	Regards,<br />
 	'.website_name.'<br />
