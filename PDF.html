@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>SpiffBook | B2B Cash Back Incentives</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/animate-custom.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+
+<body>
+
+<!-- start header -->
+                                                                
+<div id="header">
+
+    <div class="container">
+    
+        <div class="row">
+        
+            <div class="logo col-sm-8 jw-animate-gen" data-gen-offset="90%" data-gen="fadeInLeft">
+            
+            	<h1><img src="images/logo.png"></h1>
+                
+                
+            </div>
+            
+            <div class="header-right col-sm-4 text-center jw-animate-gen" data-gen-offset="90%" data-gen="fadeInRight">
+                
+                <p><img class="img-responsive" src="images/call-us.png"></p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>                                  
+                                  
+<!-- end header -->
+
+<!-- Start PDF Object -->
+
+	<div class="container">
+    
+    	<div class="row">
+            <p  style=" margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;">   <a title="View Spiff Book on Scribd" href="https://www.scribd.com/doc/289370901/Spiff-Book"  style="text-decoration: underline;" >Spiff Book</a></p><iframe class="scribd_iframe_embed" src="https://www.scribd.com/embeds/289370901/content?start_page=1&view_mode=scroll&show_recommendations=true" data-auto-height="false" data-aspect-ratio="undefined" scrolling="no" id="doc_94918" width="100%" height="1000" frameborder="0"></iframe>
+        	<!-- <object data="pdf/SPIFFBOOK.pdf" type="application/pdf" width="100%" height="100%">
+ 
+              <p>It appears you don't have a PDF plugin for this browser.
+              No biggie... you can <a href="myfile.pdf">click here to
+              download the PDF file.</a></p>
+              
+            </object> -->
+        
+        </div>
+    
+    </div>
+
+<!--end PDF Object-->
+
+<!--start footer-->
+
+<div id="footer">
+
+    <div class="container">
+    
+        <div class="row">
+        
+            <div class="footer-inner text-center">
+            
+              <a href="https://www.facebook.com/Brandstercom-123930917747430/" target="_blank">
+              	 <i id="facebook" class="fa fa-facebook fa-3x"></i>
+              </a>
+              
+              <a href="https://plus.google.com/+BrandsterIncStuart/posts" target="_blank">
+              	 <i id="google" class="fa fa-google fa-3x"></i>
+              </a>
+              
+              <a href="https://www.youtube.com/channel/UCj1KPv_KDpDO_UmD2pEzuHw" target="_blank">
+              	 <i id="youtube" class="fa fa-youtube-play fa-3x"></i>
+              </a>
+                       
+            </div> 
+            
+            <p>All rights reserved Copyright © 2015 Brandster Inc</p> 
+            
+        </div>
+        
+    </div>
+    
+</div> 
+
+<!--end footer-->
+
+<a href="#header" class="top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="scripts/smoothScroll.js" type="text/javascript"></script>
+<script src="scripts/waypoints.js" type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(function() {
+        jQuery('body').on('submit', 'form.estimation-form', function() {
+            var curForm = jQuery(this);
+            $.ajax({
+                url: 'mail.php',
+                type: 'POST',
+                data: jQuery(curForm).serialize(),
+                success: function(data) {
+                    jQuery('.expMessage').html(data);
+                }
+            });
+            return false;
+        });
+    });
+    </script>
+</body>
+</html>
